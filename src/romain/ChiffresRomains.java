@@ -7,7 +7,7 @@ public class ChiffresRomains {
 		if(n<1 || n>3999) throw new IllegalArgumentException();
 		
 		if (n==4) return "IV";
-		
+		if(n==9) return "IX";
 		
 		StringBuilder r = new StringBuilder();
 		int nbI = n;
