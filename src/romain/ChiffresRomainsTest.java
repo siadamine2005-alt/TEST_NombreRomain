@@ -15,8 +15,14 @@ class ChiffresRomainsTest {
 	}
 
 	@Test
-	void testiter1() {
+	void testIter1() {
 		assertEquals("I", cf.toChiffresRomains(1));
+	}
+	
+	@Test
+	void testIter2() {
+		assertEquals("II", cf.toChiffresRomains(2));
+		assertEquals("III", cf.toChiffresRomains(3));
 	}
 
 }
