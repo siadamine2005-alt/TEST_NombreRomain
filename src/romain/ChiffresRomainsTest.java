@@ -59,4 +59,12 @@ class ChiffresRomainsTest {
 		assertEquals("XI", cf.toChiffresRomains(11));
 		assertEquals("XXXIV", cf.toChiffresRomains(34));
 	}
+	
+	@Test
+	void testIter9() {
+		assertEquals("C", cf.toChiffresRomains(100));
+		assertEquals("MM", cf.toChiffresRomains(2000));
+		assertEquals("XCIX", cf.toChiffresRomains(99));
+		
+	}
 }
